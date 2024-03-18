@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(280deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main{
+  width: 43rem;
+  height: 42rem;
+  background-color: white;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 6.4rem;
+}
+
+h1{
+  margin-bottom: 1.4rem;
+  font-family: 'montserrat';
+  font-weight: 700;
+  text-align: center;
+}
+
+p{
+  font-family: 'dm sans';
+  font-weight: 400;
+  text-align: center;
+}
+
+button {
+  width: 30rem;
+  height: 20rem;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.biscoito{
+  width: 18rem;
+  height: 5.5rem;
+  background-color: #FF9500;
+  border-radius: 4px;
+  align-items: center;
+  margin-left: 5.7rem;
+  font-family: 'dm sans';
+  font-weight: 700;
+  color: white;
+}
+
+.screen1 button:hover {
+  animation: treme 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes treme {
+  0% {margin-left: 0;}
+  25% {margin-left: 10px;}
+  50% {margin-left: 5px;}
+  75% {margin-left: 10px;}
+  100% {margin-left: 5px;}
+}
+
+.screen2 {
+  width: 42.8rem;
+  height: 56.4rem;
+  background-color: white;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 6.4rem;
+  
+}
+
+.sorte {
+width: 293px;
+height: 107px;
+background: #E4EDF1;
+box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+display: flex;
+align-items: center;
+margin-top: 1.7rem;
+margin-bottom: 6rem;
+animation: sorte 2s;
+}
+
+@keyframes sorte {
+  0% {
+    transform:
+    translateY(150px)
+    scale(0.1);
+
+  }
+
+  100% {
+    transform:
+    translateY(0px)
+    scale(1);
+  }
+}
+
+.sorte p {
+  font-family: 'Dancing Script';
+  width: 100vh;
+  font-size: 2.4rem;  
+}
+
+.biscoito2 {
+  margin-bottom: 5rem;
+}
+
+.hide {
+    display: none
+}
